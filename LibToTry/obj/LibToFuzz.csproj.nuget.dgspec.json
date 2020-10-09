@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\PeterFuzz\\go\\src\\github.com\\fuzzbuzz\\platform\\sfz\\sfz-build-csharp\\LibToFuzz\\LibToFuzz\\LibToFuzz.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PeterFuzz\\go\\src\\github.com\\fuzzbuzz\\platform\\sfz\\sfz-build-csharp\\LibToFuzz\\LibToFuzz\\LibToFuzz.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PeterFuzz\\go\\src\\github.com\\fuzzbuzz\\platform\\sfz\\sfz-build-csharp\\LibToFuzz\\LibToFuzz\\LibToFuzz.csproj",
+        "projectName": "LibToFuzz",
+        "projectPath": "C:\\Users\\PeterFuzz\\go\\src\\github.com\\fuzzbuzz\\platform\\sfz\\sfz-build-csharp\\LibToFuzz\\LibToFuzz\\LibToFuzz.csproj",
+        "packagesPath": "C:\\Users\\PeterFuzz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PeterFuzz\\go\\src\\github.com\\fuzzbuzz\\platform\\sfz\\sfz-build-csharp\\LibToFuzz\\LibToFuzz\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\PeterFuzz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

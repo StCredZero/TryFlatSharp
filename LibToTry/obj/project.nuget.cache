@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hv1gYYxPav1qokGDlJOuV0vC9nc9yF3/pn2po8rEZUHMBDimpTW4SJmYoQva9TqVq0/c2EE9CHdecs6FxfrhYQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PeterFuzz\\go\\src\\github.com\\fuzzbuzz\\platform\\sfz\\sfz-build-csharp\\LibToFuzz\\LibToFuzz\\LibToFuzz.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+}

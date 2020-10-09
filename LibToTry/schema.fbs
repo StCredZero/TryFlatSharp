@@ -1,0 +1,71 @@
+namespace LibToFuzz;
+
+table Attribute
+(PrecompiledSerializer:vectorcache)
+{
+    Key:string;
+    Value:string;
+    Values:[string];
+}
+
+table ConfigEntry
+(PrecompiledSerializer:vectorcache)
+{
+    Tag:string;
+    Type:string;
+    Value:string;
+    Attributes:[Attribute];
+    FieldName:string;
+    FullType:string;
+    Children:[ConfigEntry];
+    Key:string;
+    Used:bool;
+    Topic:string;
+}
+
+table FSeed
+(PrecompiledSerializer:vectorcache)
+{
+    Data:[ConfigEntry];
+    Meta:[Attribute];
+    SensorBytes:[ubyte];
+}
+
+table Downstream
+(PrecompiledSerializer:vectorcache)
+{
+    ShouldSkip:bool;
+    ShouldInit:bool;
+    GotUpstream:bool;
+    Depth:uint;
+    Meta:[Attribute];
+    Seed:FSeed;
+}
+
+table Upstream
+(PrecompiledSerializer:vectorcache)
+{
+    Crashed:bool;
+    HasFailed:bool;
+    MustDiscard:bool;
+    MustSave:bool;
+    ShouldSkip:bool;
+    SFZError:uint;
+    ResultMessage:string;
+    Depth:uint;
+    MinElements:int;
+    MaxElements:int;
+    MaxBufferLen:int;
+    SensorTranslation:int;
+    Timeout:uint64;
+    InitError:string;
+    Structure:FSeed;
+    Meta:[ConfigEntry];
+    FromList:[ConfigEntry];
+    Seeds:[ConfigEntry];
+    Tokens:[ConfigEntry];
+    ReturnData:[Attribute];
+    CFGenerator:[Attribute];
+}
+
+root_type Downstream;
